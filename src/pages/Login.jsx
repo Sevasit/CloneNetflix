@@ -46,21 +46,23 @@ const Login = () => {
                   type="email"
                   placeholder="Email"
                   autoComplete="email"
-                  className="text-black p-3 bg-slate-600 rounded"
+                  required
+                  className="focus:bg-slate-400 text-black p-3 bg-slate-600 rounded"
                 />
                 <input
                   onChange={(e) => setPassword(e.target.value)}
                   type="password"
                   placeholder="Password"
                   autoComplete="current-password"
-                  className="mt-5 text-black p-3 bg-slate-600 rounded"
+                  required
+                  className="mt-5 focus:bg-slate-400 text-black p-3 bg-slate-600 rounded"
                 />
                 <button className="bg-red-600 py-3 my-6 rounded font-bold">
                   Sign In
                 </button>
                 <div className="flex justify-between items-center text-sm text-gray-600">
                   <p>
-                    <input className="mr-2" type="checkbox" />
+                    <input className="mr-2" type="checkbox" required />
                     Remember Me
                   </p>
                   <p>Need Help</p>

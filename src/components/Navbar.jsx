@@ -28,13 +28,13 @@ const Navbar = () => {
       {user?.email ? (
         <div>
           <Link to="/account">
-            <button className="text-white px-4 py-[4px] mr-2 md:mr-7 border border-white md:text-sm text-xs">
+            <button className="text-white px-4 py-[4px] mr-2 md:mr-7 border border-white md:text-sm text-xs hover:bg-slate-50 hover:text-black rounded">
               Account
             </button>
           </Link>
           <button
             onClick={logOutHandler}
-            className="bg-red-600 px-4 py-1 rounded cursor-pointer text-white md:text-sm text-xs"
+            className="bg-red-600 px-4 py-1 rounded cursor-pointer text-white md:text-sm text-xs hover:bg-transparent hover:border"
           >
             Logout
           </button>
@@ -42,12 +42,12 @@ const Navbar = () => {
       ) : (
         <div>
           <Link to="/login">
-            <button className="text-white px-4 py-[4px] mr-2 md:mr-7 border border-white md:text-sm text-xs">
+            <button className="text-white px-4 py-[4px] mr-2 md:mr-7 border border-white md:text-sm text-xs hover:bg-slate-50 hover:text-black rounded">
               Sign In
             </button>
           </Link>
           <Link to="/signup">
-            <button className="bg-red-600 px-4 py-1 rounded cursor-pointer text-white md:text-sm text-xs">
+            <button className="bg-red-600 px-4 py-1 rounded cursor-pointer text-white md:text-sm text-xs hover:bg-transparent hover:border">
               Sign Up
             </button>
           </Link>
